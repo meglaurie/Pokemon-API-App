@@ -3,7 +3,7 @@ import './styles.css';
 
 function Navbar(){
   return(
-    <div class="Navbar">Pokemon API</div>
+    <div className="Navbar">Pokemon API</div>
   )
 }
 
