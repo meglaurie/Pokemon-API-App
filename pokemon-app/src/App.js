@@ -31,9 +31,17 @@ function App() {
   console.log(pokemonData);
   return (
     <div className="App">
-    {loading ? <h1>Loading...</h1> : (
-      <h1>Data is fetched</h1>
-    )}
+    {
+      loading ? <h1>Loading...</h1> : (
+        <>
+          <div className="grid-container">
+            {pokemonData.map((pokemon, i) => {
+              return <Card/>
+             })}
+          </div>
+        </>
+      )
+    }
     </div>
   );
 }
