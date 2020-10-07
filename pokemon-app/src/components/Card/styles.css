@@ -5,6 +5,7 @@ p {
 .Card {
     background: white;
     border-radius: 10px;
+    padding: 15px;
 }
 
 .Card__img {
