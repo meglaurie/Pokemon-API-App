@@ -1,6 +1,7 @@
 import React, { useState, useEffect }from 'react';
 import { getAllPokemon, getPokemon } from './services/pokemon';
 import logo from './logo.svg';
+import Card from './components/Card/Card';
 import './App.css';
 
 function App() {
@@ -36,7 +37,7 @@ function App() {
         <>
           <div className="grid-container">
             {pokemonData.map((pokemon, i) => {
-              return <Card/>
+              return <Card key={i} pokemon={pokemon}/>
              })}
           </div>
         </>
